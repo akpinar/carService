@@ -1,0 +1,76 @@
+.fade {
+  @include transition($transition-fade);
+
+  &:not(.show) {
+    opacity: 0;
+  }
+}
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+//
+// Components
+//
+
+.c-wrapper {
+  transition: margin $layout-transition-speed;
+}
+
+.c-sidebar {
+  transition: box-shadow $layout-transition-speed $layout-transition-speed / 2, transform $layout-transition-speed, margin-left $layout-transition-speed, margin-right $layout-transition-speed, width $layout-transition-speed, z-index 0s ease $layout-transition-speed;
+  &.c-sidebar-unfoldable {
+    transition: transform $layout-transition-speed, margin-left $layout-transition-speed, margin-right $layout-transition-speed, width $layout-transition-speed, z-index 0s ease 0s;
+  }
+}
+
+.c-no-layout-transition {
+  .c-wrapper,
+  .c-sidebar {
+    transition: none;
+
+    .c-sidebar-header,
+    .c-sidebar-nav-title,
+    .c-sidebar-nav-divider,
+    .c-sidebar-nav-link,
+    .c-sidebar-nav-icon,
+    .c-sidebar-nav-dropdown,
+    .c-sidebar-nav-dropdown-toggle,
+    .c-sidebar-nav-dropdown-toggle::after,
+    .c-sidebar-nav-dropdown-items,
+    .c-sidebar-nav-label,
+    .c-sidebar-footer,
+    .c-sidebar-minimizer  {
+      transition: none;
+    }
+  }
+}
+
+.c-no-transition {
+  transition: none;
+}

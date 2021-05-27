@@ -1,0 +1,62 @@
+{
+  "name": "streamedian",
+  "version": "0.3.13",
+  "description": "HTML5 MSE RTSP player over websockets",
+  "license": "Apache2",
+  "private": true,
+  "author": "Streamedian <streamedian.player@gmail.com> (http://streamedian.com/)",
+  "homepage": "https://streamedian.com/",
+  "keywords": [
+    "html5",
+    "rtsp",
+    "mse",
+    "streaming"
+  ],
+  "contributors": [
+    {
+      "name": "Victor Grenke",
+      "email": "viktor.grenke@gmail.com",
+      "url": "https://streamedian.com/"
+    },
+    {
+      "name": "Igor Shakirov",
+      "email": "igor.shakirov@specforge.com",
+      "url": "https://specforge.com/"
+    },
+    {
+      "name": "Ruslan Shamunov",
+      "email": "ruslan.shamunov@specforge.com",
+      "url": "https://specforge.com/"
+    },
+    {
+      "name": "Alexey Gornostaev",
+      "email": "kreopt@gmail.com",
+      "url": "https://github.com/kreopt/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Streamedian/html5_rtsp_player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Streamedian/html5_rtsp_player/issues",
+    "email": "specforge@gmail.com"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup": "^0.33.2",
+    "rollup-plugin-alias": "^1.4.0",
+    "rollup-plugin-async": "^1.2.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-buble": "^0.17.0",
+    "rollup-plugin-node-resolve": "^1.7.3",
+    "rollup-plugin-uglify": "^2.0.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bp_event": "^1.1.2",
+    "bp_logger": "^1.0.3",
+    "bp_statemachine": "^1.0.13",
+    "jsencrypt": "git+https://github.com/kreopt/jsencrypt.git"
+  }
+}

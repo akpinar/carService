@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CWidgetDropdown matches custom props snapshot 1`] = `
+<div
+  class="card bg-info text-white"
+>
+  <div
+    class="card-body pb-0 d-flex justify-content-between"
+  >
+    <div>
+      <div
+        class="text-value-lg"
+      >
+        header
+      </div>
+       
+      <div>
+        text
+      </div>
+    </div>
+     
+  </div>
+   
+</div>
+`;
+
+exports[`CWidgetDropdown matches default props snapshot 1`] = `
+<div
+  class="card bg-undefined text-white"
+>
+  <div
+    class="card-body pb-0 d-flex justify-content-between"
+  >
+    <div>
+      <!---->
+       
+      <!---->
+    </div>
+     
+  </div>
+   
+</div>
+`;

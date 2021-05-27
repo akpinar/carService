@@ -1,0 +1,44 @@
+.breadcrumb-menu {
+  @include ltr {
+    margin-left: auto;
+  }
+  @include ltr {
+    margin-right: auto;
+  }
+
+
+  &::before {
+    display: none;
+  }
+
+  .btn-group {
+    vertical-align: top;
+  }
+
+  .btn {
+    padding: 0 $input-btn-padding-x;
+    vertical-align: top;
+    border: 0;
+
+    &:hover,
+    &.active {
+      color: $body-color;
+      background: transparent;
+    }
+    @include themes($typography-theme-map, $create: parent) {
+      color: themes-get-value("text-muted");
+    }
+  }
+
+  .show {
+    .btn {
+      color: $body-color;
+      background: transparent;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 180px;
+    line-height: $line-height-base;
+  }
+}

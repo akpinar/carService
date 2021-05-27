@@ -1,0 +1,33 @@
+{
+  "name": "videojs_streamedian_plugin",
+  "version": "1.0.1",
+  "description": "rtsp/hls plugin for videojs",
+  "main": "/dist/videojs-contrib-hlsjs.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "video.js": "^7.2.0"
+  },
+  "devDependencies": {
+    "bp_logger": "^1.1.1",
+    "rollup": "^0.33.0",
+    "rollup-plugin-alias": "^1.2.0",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-buble": "^0.12.1",
+    "rollup-plugin-butternut": "^0.1.0",
+    "rollup-plugin-node-resolve": "^1.7.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hlsjs",
+    "rtspjs",
+    "rtsp.js",
+    "videojs",
+    "video.js",
+    "videojsrtsp",
+    "videojshls"
+  ]
+}

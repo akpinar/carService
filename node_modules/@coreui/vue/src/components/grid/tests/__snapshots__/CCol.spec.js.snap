@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CCol renders correctly 1`] = `
+<div
+  class="col"
+/>
+`;
+
+exports[`CCol renders correctly 2`] = `
+<div
+  class="col-sm-12 col-md-6 offset-md-3 order-md-1 col-xl col-xxl-4 offset-xxl-2 order-xxl-1"
+>
+  <template>
+    CCol content
+  </template>
+</div>
+`;

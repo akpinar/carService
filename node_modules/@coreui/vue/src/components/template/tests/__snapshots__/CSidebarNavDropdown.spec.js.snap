@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSidebarNavDropdown renders correctly 1`] = `
+<li
+  class="c-sidebar-nav-dropdown"
+>
+  <a
+    class="c-sidebar-nav-dropdown-toggle"
+  >
+    <svg
+      class="c-icon c-icon-lg c-sidebar-nav-icon"
+      role="img"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      undefined
+    </svg>
+     
+    <!---->
+    
+    
+  
+  </a>
+   
+  <ul
+    class="c-sidebar-nav-dropdown-items"
+  />
+</li>
+`;

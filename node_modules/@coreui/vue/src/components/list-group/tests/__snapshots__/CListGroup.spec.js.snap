@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CListGroup renders correctly 1`] = `
+<ul
+  class="list-group list-group-horizontal-sm"
+  role="list-items"
+/>
+`;
+
+exports[`CListGroup renders correctly with flush option 1`] = `
+<ul
+  class="list-group list-group-flush list-group-accent"
+  role="list-items"
+>
+  <template>
+    CListGroup content
+  </template>
+</ul>
+`;

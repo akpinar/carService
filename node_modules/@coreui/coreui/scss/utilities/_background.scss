@@ -1,0 +1,42 @@
+// stylelint-disable declaration-no-important
+@include theme-variant() {
+  @include bg-variant(".bg-#{$color}", $value, true);
+}
+
+// @if $enable-gradients {
+//   @include theme-variant() {
+//     @include bg-gradient-variant(".bg-gradient-#{$color}", $value, true);
+//   }
+// }
+
+@include theme-gradients() {
+  @include coreui-bg-gradient-variant(".bg-gradient-#{$gradient}", $value);
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+[class^="bg-"] {
+  color: $white;
+}
+
+@each $color, $value in $brands-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+@each $color, $value in $grays {
+  @include bg-variant(".bg-gray-#{$color}", $value);
+}
+
+.bg-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: ($spacer * 2.5);
+  height: ($spacer * 2.5);
+}

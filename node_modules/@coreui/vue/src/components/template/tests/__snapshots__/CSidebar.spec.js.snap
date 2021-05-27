@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSidebar .vue renders correctly 1`] = `
+<div
+  class="c-sidebar c-sidebar-light c-sidebar-lg-show c-sidebar-fixed c-sidebar-right c-sidebar-lg"
+  id="sidebar"
+/>
+`;
+
+exports[`CSidebar .vue renders correctly 2`] = `
+<div>
+  <div
+    class="c-sidebar c-sidebar-dark c-sidebar-show c-sidebar-fixed"
+  >
+    <a
+      class="c-sidebar-nav-link"
+      href="/some-path"
+    >
+      link
+    </a>
+    <a
+      class="c-sidebar-nav-dropdown"
+      href="/some-path"
+    >
+      link
+    </a>
+  </div>
+  <div
+    class="view"
+  >
+    content
+  </div>
+</div>
+`;

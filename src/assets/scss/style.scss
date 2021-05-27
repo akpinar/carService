@@ -1,0 +1,44 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+.card-header:not(.content-center) > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+.text-white .text-muted {
+  color: rgba(255, 255, 255) !important;
+}
+
+.text-value {
+  font-size: 24px;
+}
+
+.text-muted {
+  color: #000000 !important;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid;
+  border-color: #d8dbe0;
+  text-transform: uppercase;
+}
+// .table-responsive {
+//   display: block;
+//   width: 100%;
+//   overflow-x: hidden;
+//   -webkit-overflow-scrolling: touch;
+// }

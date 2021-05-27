@@ -1,0 +1,57 @@
+//
+// Base styles
+//
+
+.c-callout {
+  position: relative;
+  padding: 0 $spacer;
+  margin: $spacer 0;
+
+  @include ltr {
+    border-left: 4px solid $border-color;
+  }
+  @include rtl {
+    border-right: 4px solid $border-color;
+  }
+
+  @if $enable-rounded {
+    border-radius: $border-radius;
+  }
+}
+
+.c-callout-bordered {
+  border: 1px solid $border-color;
+  border-left-width: 4px;
+}
+.c-callout code {
+  border-radius: $border-radius;
+}
+.c-callout h4 {
+  margin-top: 0;
+  margin-bottom: .25rem;
+}
+.c-callout p:last-child {
+  margin-bottom: 0;
+}
+.c-callout + .c-callout {
+  margin-top: - .25rem;
+}
+
+//
+// Variants
+//
+
+@include theme-variant() {
+  .c-callout-#{$color} {
+    @include ltr {
+      border-left-color: $value;
+    }
+    @include rtl {
+      border-right-color: $value;
+    }
+
+    h4 {
+      color: $value;
+    }
+  }
+}

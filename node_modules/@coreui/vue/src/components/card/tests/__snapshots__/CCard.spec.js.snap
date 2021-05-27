@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CCard renders correctly 1`] = `
+<div
+  class="card text-left bg-success border-solid text-white"
+/>
+`;
+
+exports[`CCard renders correctly with slots 1`] = `
+<div
+  class="card card-accent-primary text-left bg-success border-solid text-white"
+>
+  <div
+    class="card-body"
+  >
+    this should be rendered in body wrapper
+  </div>
+</div>
+`;
+
+exports[`CCard renders correctly without body 1`] = `
+<div
+  class="card"
+/>
+`;

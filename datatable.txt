@@ -1,0 +1,56 @@
+ <CDataTable
+                :items="items"
+                :fields="fieldsTable"
+                column-filter
+                table-filter
+                items-per-page-select
+                :items-per-page="5"
+                :activePage="4"
+                hover
+                sorter
+                pagination
+              >
+                <template #status="{ item }">
+                  <td>
+                    <CBadge :color="getBadge(item.status)">
+                      {{ item.status }}
+                    </CBadge>
+                  </td>
+                </template>
+                <template #show_details="{ item, index }">
+                  <td class="py-2">
+                    <CButton
+                      color="primary"
+                      variant="outline"
+                      square
+                      size="sm"
+                      @click="toggleDetails(item, index)"
+                    >
+                      {{ Boolean(item._toggled) ? "Hide" : "Show" }}
+                    </CButton>
+                  </td>
+                </template>
+                <template #details="{ item }">
+                  <CCollapse
+                    :show="Boolean(item._toggled)"
+                    :duration="collapseDuration"
+                  >
+                    <CCardBody>
+                      <CMedia :aside-image-props="{ height: 102 }">
+                        <h4>
+                          {{ item.username }}
+                        </h4>
+                        <p class="text-muted">
+                          User since: {{ item.registered }}
+                        </p>
+                        <CButton size="sm" color="info" class="">
+                          User Settings
+                        </CButton>
+                        <CButton size="sm" color="danger" class="ml-1">
+                          Delete
+                        </CButton>
+                      </CMedia>
+                    </CCardBody>
+                  </CCollapse>
+                </template>
+              </CDataTable>

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CListGroupItem renders correctly 1`] = `
+<li
+  class="list-group-item"
+/>
+`;
+
+exports[`CListGroupItem renders correctly 2`] = `
+<button
+  class="list-group-item list-group-item-success list-group-item-accent-success list-group-item-action"
+  type="button"
+>
+  <template>
+    CListGroupItem content
+  </template>
+</button>
+`;
+
+exports[`CListGroupItem renders correctly disabled 1`] = `
+<button
+  class="list-group-item list-group-item-action disabled"
+  disabled="disabled"
+  type="submit"
+>
+  <template>
+    disabled CListGroupItem content
+  </template>
+</button>
+`;

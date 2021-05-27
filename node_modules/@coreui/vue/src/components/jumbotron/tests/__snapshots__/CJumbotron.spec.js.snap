@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CJumbotron renders correctly 1`] = `
+<div
+  class="jumbotron"
+/>
+`;
+
+exports[`CJumbotron renders correctly 2`] = `
+<div
+  class="jumbotron jumbotron-fluid text-dark bg-success border-secondary border"
+>
+  <template>
+    content
+  </template>
+</div>
+`;

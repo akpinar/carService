@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSidebarBrand renders correctly as div 1`] = `
+<div
+  class="c-sidebar-brand"
+/>
+`;
+
+exports[`CSidebarBrand renders correctly as link 1`] = `
+<a
+  class="c-sidebar-brand"
+  href="https://coreui.io"
+  target="_self"
+/>
+`;

@@ -1,0 +1,11 @@
+//
+// RTL Support
+//
+@include rtl {
+  direction: rtl;
+  unicode-bidi: embed;
+
+  body {
+    text-align: right;
+  }
+}

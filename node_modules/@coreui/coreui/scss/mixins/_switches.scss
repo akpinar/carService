@@ -1,0 +1,84 @@
+@mixin switch-size($width, $height, $font-size, $handle-margin) {
+  width: $width;
+  height: $height;
+
+  .c-switch-slider {
+    font-size: $font-size;
+
+    &::before {
+      width: $height - ($handle-margin * 2) - ($border-width * 2);
+      height: $height - ($handle-margin * 2) - ($border-width * 2);
+    }
+    &::after {
+      font-size: $font-size;
+    }
+  }
+
+  .c-switch-input:checked ~ .c-switch-slider {
+    &::before {
+      transform: translateX($width - $height);
+    }
+  }
+}
+
+@mixin switch-3d-size($width, $height) {
+  width: $width;
+  height: $height;
+
+  .c-switch-slider::before {
+    width: $height;
+    height: $height;
+  }
+
+  .c-switch-input:checked ~ .c-switch-slider {
+    &::before {
+      transform: translateX($width - $height);
+    }
+  }
+}
+
+@mixin switch-3d-variant($color) {
+  .c-switch-input:checked + .c-switch-slider {
+    background-color: $color;
+  }
+}
+
+@mixin switch-variant($color) {
+  .c-switch-input:checked + .c-switch-slider {
+    background-color: $color;
+    border-color: darken($color, 10%);
+
+    &::before {
+      border-color: darken($color, 10%);
+    }
+  }
+}
+
+@mixin switch-outline-variant($color) {
+  .c-switch-input:checked + .c-switch-slider {
+    background-color: inherit;
+    border-color: $color;
+
+    &::before {
+      border-color: $color;
+    }
+    &::after {
+      color: $color;
+    }
+  }
+}
+
+@mixin switch-opposite-variant($color) {
+  .c-switch-input:checked + .c-switch-slider {
+    background-color: inherit;
+    border-color: $color;
+
+    &::before {
+      background-color: $color;
+      border-color: $color;
+    }
+    &::after {
+      color: $color;
+    }
+  }
+}

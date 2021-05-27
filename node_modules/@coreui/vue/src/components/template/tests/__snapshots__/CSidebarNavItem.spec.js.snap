@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSidebarNavItem.vue renders correctly 1`] = `
+<li
+  class="c-sidebar-nav-item"
+  id="link"
+>
+  <a
+    class="c-sidebar-nav-link c-sidebar-nav-link-success"
+    href="#"
+    target="_self"
+  >
+    <svg
+      class="c-sidebar-nav-icon"
+      role="img"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      undefined
+    </svg>
+     
+    <!---->
+    
+      test link
+      
+    <span
+      class="badge badge-success"
+    >
+      
+        NEW
+      
+    </span>
+  </a>
+</li>
+`;
+
+exports[`CSidebarNavItem.vue renders correctly in label mode 1`] = `
+<li
+  class="c-sidebar-nav-item"
+  id="link"
+>
+  <a
+    class="c-sidebar-nav-label"
+    href="#"
+    target="_self"
+  >
+    <svg
+      class="c-sidebar-nav-icon"
+      role="img"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      undefined
+    </svg>
+     
+    <!---->
+    
+      test link
+      
+    <span
+      class="badge badge-success"
+    >
+      
+        NEW
+      
+    </span>
+  </a>
+</li>
+`;
